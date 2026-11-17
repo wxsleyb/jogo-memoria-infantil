@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#51bdfa">
+  <meta name="description" content="Jogo da Memória infantil com bichinhos, frutinhas e veículos. Escolha uma dificuldade e encontre os pares!">
+  <title>JOGO DA MEMÓRIA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800;900&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="biblioteca-local.js" defer></script>
+  <script src="biblioteca-pixabay.js" defer></script>
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <div class="playground-bg" aria-hidden="true">
+    <div class="sun"></div><div class="cloud cloud-one"></div><div class="cloud cloud-two"></div>
+    <div class="hill hill-left"></div><div class="hill hill-right"></div>
+    <div class="playtower"><span class="tower-roof"></span><span class="tower-body"></span><span class="tower-slide"></span></div>
+    <div class="swing"><span class="swing-top"></span><span class="swing-seat"></span></div>
+    <div class="grass"></div>
+  </div>
+
+  <div class="page">
+    <header class="site-header" aria-label="Cabeçalho do jogo">
+      <img class="hero-mascot mascot-left" src="img/ilustracoes/animais/06-lion.svg" alt="" aria-hidden="true">
+      <div class="brand-title">
+        <span class="brand-eyebrow">✦ VAMOS BRINCAR! ✦</span>
+        <h1><span>JOGO DA</span> <strong>MEMÓRIA</strong></h1>
+        <span class="edition">☀ PARQUINHO COLORIDO ☀</span>
+      </div>
+      <img class="hero-mascot mascot-right" src="img/ilustracoes/animais/03-rabbit.svg" alt="" aria-hidden="true">
+      <button id="sound-toggle" type="button" class="sound-toggle" aria-pressed="false" aria-label="Ativar sons" title="Ativar ou desativar sons"><span id="sound-icon" aria-hidden="true">♫</span><span class="sound-label">Som desligado</span></button>
+    </header>
+
+    <div class="game-layout">
+      <aside class="setup-panel surface" aria-labelledby="setup-heading">
+        <div class="panel-decoration" aria-hidden="true">● ● ●</div>
+        <h2 id="setup-heading">Escolha sua aventura!</h2>
+        <p class="intro">Descubra figuras iguais e divirta-se!</p>
+
+        <div class="setting-group">
+          <div class="setting-heading">Escolha o tema:</div>
+          <div class="theme-list" role="group" aria-label="Tema das ilustrações">
+            <button class="theme is-selected" type="button" data-theme="animais" aria-pressed="true"><span class="theme-emoji" aria-hidden="true">🐾</span><span>Bichinhos</span></button>
+            <button class="theme" type="button" data-theme="frutas" aria-pressed="false"><span class="theme-emoji" aria-hidden="true">🍓</span><span>Frutinhas</span></button>
+            <button class="theme" type="button" data-theme="transportes" aria-pressed="false"><span class="theme-emoji" aria-hidden="true">🚙</span><span>Veículos</span></button>
+            <button class="theme" type="button" data-theme="todos" aria-pressed="false"><span class="theme-emoji" aria-hidden="true">🌈</span><span>Todos</span></button>
+          </div>
+        </div>
+
+        <div class="setting-group difficulty-group">
+          <div class="setting-heading">Escolha a dificuldade:</div>
+          <div class="preset-list" role="group" aria-label="Dificuldade por quantidade de pares">
+            <button type="button" class="preset" data-pairs="6" aria-pressed="false"><span><strong>Fácil</strong><small>6 pares</small></span><b class="preset-check" aria-hidden="true">✓</b></button>
+            <button type="button" class="preset" data-pairs="12" aria-pressed="false"><span><strong>Médio</strong><small>12 pares</small></span><b class="preset-check" aria-hidden="true">✓</b></button>
+            <button type="button" class="preset is-selected" data-pairs="16" aria-pressed="true"><span><strong>Difícil</strong><small>16 pares</small></span><b class="preset-check" aria-hidden="true">✓</b></button>
+          </div>
+          <label class="input-label" for="numPairs">Ou personalize <span>(2 a 32 pares)</span></label>
+          <div class="input-wrap"><input type="number" id="numPairs" name="numPairs" min="2" max="32" step="1" value="16" inputmode="numeric"><span>pares</span></div>
+        </div>
+
+        <button id="start-button" class="primary-button" type="button"><span aria-hidden="true">▶</span><span id="start-button-label">Começar a jogar!</span><span aria-hidden="true">✦</span></button>
+        <p class="setup-message" id="setup-message" role="status" aria-live="polite">Escolha um tema e comece a brincadeira!</p>
+        <div class="privacy-note">🌟 Figurinhas selecionadas para brincar com segurança.</div>
+        <img class="side-mascot" src="img/ilustracoes/animais/04-bear.svg" alt="" aria-hidden="true">
+      </aside>
+
+      <main class="main-column" aria-label="Área de jogo">
+        <div class="stats-grid" aria-label="Placar">
+          <div class="stat"><span class="stat-icon violet" aria-hidden="true">🎯</span><div><small>TENTATIVAS</small><strong id="attempts-value">0</strong></div></div>
+          <div class="stat"><span class="stat-icon cyan" aria-hidden="true">⏱️</span><div><small>TEMPO</small><strong id="time-value">00:00</strong></div></div>
+          <div class="stat"><span class="stat-icon pink" aria-hidden="true">⭐</span><div><small>PARES</small><strong id="pairs-value">0 <em>/ 16</em></strong></div></div>
+        </div>
+
+        <section class="board-panel surface" aria-labelledby="board-title">
+          <div class="board-heading"><div><span class="board-overline">✨ ÁREA DE JOGO</span><h2 id="board-title">Encontre os pares!</h2></div><span id="level-label" class="level-pill">INSANO · 16 PARES</span></div>
+          <div class="progress-caption"><span>Seu progresso</span><span id="progress-text">0% concluído</span></div>
+          <div id="progress-track" class="progress-track" role="progressbar" aria-label="Pares encontrados" aria-valuemin="0" aria-valuemax="16" aria-valuenow="0"><span id="progress-fill" class="progress-fill"></span></div>
+
+          <div class="board-stage" id="board-stage">
+            <div id="game-board" class="container is-preview" aria-label="Cartas do jogo"></div>
+            <div class="board-hint" id="board-hint"><div class="hint-card"><strong>Vamos brincar? 🎈</strong><p>Escolha um tema e a dificuldade para começar!</p><button type="button" class="secondary-button" id="preview-start">▶ Começar</button></div></div>
+            <div class="pause-overlay" id="pause-overlay" hidden><div class="hint-card"><strong>Hora da pausa! ⏸</strong><p>As cartinhas estão esperando por você!</p><button type="button" id="resume-button" class="secondary-button">▶ Continuar</button></div></div>
+          </div>
+
+          <div class="toolbar">
+            <div class="record"><span aria-hidden="true">🏆</span> MELHOR RESULTADO <strong id="best-record">—</strong></div>
+            <div class="controls"><button type="button" id="pause-button" disabled class="text-button">Ⅱ Pausar</button><div class="separator" aria-hidden="true"></div><div class="zoom-controls" role="group" aria-label="Zoom das cartas"><button id="zoom-out" type="button" aria-label="Diminuir cartas">−</button><output id="zoom-label">100%</output><button id="zoom-in" type="button" aria-label="Aumentar cartas">+</button></div></div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer><strong>JOGO DA MEMÓRIA</strong></footer>
+  </div>
+
+  <dialog id="win-dialog" class="win-dialog" aria-labelledby="win-title">
+    <div class="win-content"><button id="close-win" type="button" class="win-close" aria-label="Fechar resultado">×</button><span class="medal" aria-hidden="true">🏆</span><span class="win-tag">PARABÉNS! 🎉</span><h2 id="win-title">Você encontrou todos os pares!</h2><p class="win-description">Que memória incrível! Vamos brincar mais uma vez?</p><div id="win-stars" class="win-stars" aria-label="Estrelas conquistadas">★★★</div><div class="win-stats"><div><small>TEMPO</small><strong id="win-time">00:00</strong></div><div><small>TENTATIVAS</small><strong id="win-attempts">0</strong></div><div><small>PARES</small><strong id="win-pairs">16</strong></div></div><p id="win-record" class="win-record"></p><button class="primary-button" id="play-again" type="button"><span aria-hidden="true">↻</span><span>Jogar novamente</span><span aria-hidden="true">✦</span></button></div>
+  </dialog>
+</body>
+</html>
