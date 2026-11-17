@@ -59,3 +59,21 @@ A ferramenta baixa arquivos selecionados para o projeto e atualiza `biblioteca-p
 | `img/card-back-original.png` | Verso antigo preservado |
 | `img/ilustracoes/` | Imagens infantis locais |
 | `tools/importar_pixabay.py` | Busca e importação de candidatos Pixabay |
+
+## Configuração padrão ao abrir
+
+O site inicia com o tema **Bichinhos** (`animais`) e a dificuldade **Casual** (**6 pares / 12 cartas**) selecionados. O jogador pode trocar tema e dificuldade antes de começar uma partida.
+
+
+## Revisão das imagens de transportes (novembro de 2026)
+
+**Alterações limitadas à categoria Veículos.** Os SVGs das categorias Bichinhos e Frutinhas foram preservados sem nenhuma alteração.
+
+- **7 transportes redesenhados** com silhuetas reconhecíveis: helicóptero (`09-helicopter.svg`), avião (`08-plane.svg`), moto (`05-moto.svg`), trator (`11-tractor.svg`), caminhão de bombeiros (`13-firetruck.svg`), van (`23-van.svg`) e jipe (`27-jeep.svg`).
+- **Legendas recuperadas** nos seis SVGs substituídos na revisão anterior: `06-train.svg`, `22-icecreamtruck.svg`, `28-racecar.svg`, `29-bullettrain.svg`, `30-dumptruck.svg` e `31-pickup.svg`.
+- **Legenda padronizada:** fundo branco arredondado na parte inferior de cada ilustração (como na coleção original), com o nome do transporte.
+- O catálogo passa a identificar `13-firetruck.svg` como **Caminhão de bombeiros** em vez de apenas **Bombeiros**. As renomeações anteriores de carro de sorvete, carro de corrida e caminhão basculante foram mantidas.
+- Quantidades inalteradas: **32 transportes, 32 animais, 32 frutas**. Assim, qualquer tema continua permitindo até 32 pares no modo Personalizado.
+- Configuração inicial preservada: **Casual (6 pares) e Bichinhos**.
+
+Prévia dos 13 SVGs revistos: `preview-transportes.png`. Todos os desenhos continuam em **SVG vetorial**, na mesma proporção e estrutura de arquivos que o jogo já utiliza.

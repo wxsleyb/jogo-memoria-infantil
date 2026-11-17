@@ -20,7 +20,7 @@ const ui = {
 };
 
 const game = {
-  theme: 'animais', pairs: 16, matches: 0, attempts: 0,
+  theme: 'animais', pairs: 6, matches: 0, attempts: 0,
   first: null, second: null, locked: false, state: 'ready',
   elapsed: 0, resumeAt: 0, tick: null, flipTimeout: null,
   version: 0, zoom: 1, sound: false
@@ -51,7 +51,7 @@ function updateBoardColumns(p,preview=false){
   ui.board.style.setProperty('--board-scale',game.zoom);
 }
 function previewBoard(){
-  ui.board.classList.add('is-preview');ui.board.replaceChildren();updateBoardColumns(readPairs()||16,true);
+  ui.board.classList.add('is-preview');ui.board.replaceChildren();updateBoardColumns(readPairs()||6,true);
   const fragment=document.createDocumentFragment();
   for(let i=0;i<12;i++){const el=document.createElement('div');el.className='preview-card';fragment.appendChild(el);}
   ui.board.appendChild(fragment);ui.hint.hidden=false;

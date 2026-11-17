@@ -1,8 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="360" height="420" viewBox="0 0 360 420" role="img" aria-label="Ilustração de Avião">
-  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FAEFF8"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient><filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="9" stdDeviation="9" flood-color="#7D6C9C" flood-opacity=".20"/></filter></defs>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E7F6FF"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="7" stdDeviation="5" flood-color="#6E6B87" flood-opacity=".22"/></filter>
+  </defs>
   <rect width="360" height="420" rx="24" fill="url(#bg)"/>
   <circle cx="63" cy="84" r="28" fill="#FFFFFF99"/><circle cx="301" cy="95" r="39" fill="#FFFFFF77"/><circle cx="282" cy="318" r="19" fill="#FFFFFFB2"/>
-  <g filter="url(#shadow)"><path d="M180 102 Q203 162 194 212 L268 254 L268 274 L193 250 L189 306 L171 306 L167 250 L92 274 L92 254 L166 212 Q157 162 180 102 Z" fill="#8BBFE0" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <ellipse cx="180" cy="309" rx="125" ry="12" fill="#9FA9B4" opacity=".12"/>
+  <g filter="url(#shadow)">
+    <!-- avião de passageiros vista lateral em perspectiva, com nariz e asas -->
+    <path d="M70 238 Q83 214 130 207 H284 Q301 207 308 217 L306 234 Q292 255 254 256 H125 Q91 254 70 238 Z" fill="#F5FBFF" stroke="#2B70B3" stroke-width="4"/>
+    <path d="M107 230 H289" stroke="#62C4EC" stroke-width="7" stroke-linecap="round"/>
+    <path d="M79 233 Q94 215 112 211 H148 L140 230 Z" fill="#37ABE5" stroke="#2B70B3" stroke-width="3"/>
+    <path d="M280 210 L286 171 L303 171 L308 218 Z" fill="#F2564F" stroke="#B33644" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M258 214 L282 195 L294 200 L281 223" fill="#E85051" stroke="#B33644" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M160 230 L116 282 Q113 288 126 291 L195 252 Z" fill="#EC5C50" stroke="#AD4146" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M161 230 L196 259 L244 275 L263 268 L205 233 Z" fill="#F66D5A" stroke="#B33644" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M144 283 Q170 282 188 265" fill="none" stroke="#FFA991" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="164" cy="217" r="7" fill="#49A9E4"/><circle cx="184" cy="217" r="7" fill="#49A9E4"/><circle cx="204" cy="217" r="7" fill="#49A9E4"/><circle cx="224" cy="217" r="7" fill="#49A9E4"/><circle cx="244" cy="217" r="7" fill="#49A9E4"/>
+    <path d="M212 252 Q222 259 219 273 Q204 277 197 266" fill="#358FC9" stroke="#2B70B3" stroke-width="3"/>
+    <circle cx="84" cy="232" r="4" fill="#FFF9CF"/>
+</g>
   <rect x="44" y="352" width="272" height="48" rx="24" fill="#FFFFFFE9"/>
   <text x="180" y="383" font-family="Verdana,Arial,sans-serif" font-weight="bold" font-size="23" text-anchor="middle" fill="#55516B">Avião</text>
-  </svg>
+</svg>

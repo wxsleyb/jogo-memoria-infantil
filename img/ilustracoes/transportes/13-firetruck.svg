@@ -1,8 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="360" height="420" viewBox="0 0 360 420" role="img" aria-label="Ilustração de Bombeiros">
-  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F1EBFD"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient><filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="9" stdDeviation="9" flood-color="#7D6C9C" flood-opacity=".20"/></filter></defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="420" viewBox="0 0 360 420" role="img" aria-label="Ilustração de Caminhão de bombeiros">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFF0EB"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="7" stdDeviation="5" flood-color="#6E6B87" flood-opacity=".22"/></filter>
+  </defs>
   <rect width="360" height="420" rx="24" fill="url(#bg)"/>
   <circle cx="63" cy="84" r="28" fill="#FFFFFF99"/><circle cx="301" cy="95" r="39" fill="#FFFFFF77"/><circle cx="282" cy="318" r="19" fill="#FFFFFFB2"/>
-  <g filter="url(#shadow)"><rect x="76" y="181" width="134" height="82" rx="10" fill="#F27A76" stroke="none" stroke-width="0"/><path d="M210 206 L254 206 L289 244 L289 266 L210 266 Z" fill="#F27A76" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round"/><rect x="228" y="216" width="36" height="29" rx="6" fill="#B7E1F2" stroke="none" stroke-width="0"/><path d="M111 172 L176 172" fill="none" stroke="#F5F2E8" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><path d="M125 187 L125 228" fill="none" stroke="#F5F2E8" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="132" cy="268" r="26" fill="#45566B"/><circle cx="245" cy="268" r="26" fill="#45566B"/><circle cx="132" cy="268" r="12" fill="#E8ECF2"/><circle cx="245" cy="268" r="12" fill="#E8ECF2"/><circle cx="278" cy="246" r="7" fill="#FFF0B0"/></g>
+  <ellipse cx="180" cy="309" rx="125" ry="12" fill="#9FA9B4" opacity=".12"/>
+  <g filter="url(#shadow)">
+    <!-- caminhão vermelho com cabine, escada metálica, sirene, mangueira e rodas -->
+    <path d="M92 221 H212 V268 H87 V237 Q88 225 92 221 Z" fill="#E73B3F" stroke="#AF2938" stroke-width="4"/>
+    <path d="M212 218 H250 Q266 218 272 233 L286 250 V268 H212 Z" fill="#F45145" stroke="#AF2938" stroke-width="4"/>
+    <rect x="221" y="228" width="36" height="25" rx="5" fill="#B3E9FF" stroke="#338FBF" stroke-width="3"/>
+    <rect x="104" y="229" width="43" height="30" rx="5" fill="#FAD5A6"/>
+    <path d="M91 225 H205" stroke="#FF9D7B" stroke-width="6"/>
+    <rect x="148" y="226" width="44" height="32" rx="4" fill="#DCE7F0" stroke="#7189A4" stroke-width="3"/>
+    <path d="M154 231 H185 M154 239 H185 M154 247 H185" stroke="#9FB1C5" stroke-width="3"/>
+    <circle cx="115" cy="273" r="26" fill="#334357"/><circle cx="115" cy="273" r="12" fill="#EDF3F8"/>
+    <circle cx="250" cy="273" r="26" fill="#334357"/><circle cx="250" cy="273" r="12" fill="#EDF3F8"/>
+    <circle cx="169" cy="252" r="15" fill="#FFCA46" stroke="#C68A2D" stroke-width="4"/><circle cx="169" cy="252" r="7" fill="#E94F4A"/>
+    <path d="M164 203 H277" stroke="#7B8AA5" stroke-width="10" stroke-linecap="round"/>
+    <path d="M165 197 H271" stroke="#E9F5FB" stroke-width="8" stroke-linecap="round"/>
+    <path d="M176 192 V208 M195 192 V208 M215 192 V208 M234 192 V208 M254 192 V208" stroke="#7B8AA5" stroke-width="4"/>
+    <path d="M157 202 L178 214" stroke="#7B8AA5" stroke-width="5"/>
+    <rect x="192" y="185" width="35" height="12" rx="5" fill="#F7C63A" stroke="#DB9235" stroke-width="3"/>
+    <path d="M104 221 V211 H135 V221" fill="#6CC8FF" stroke="#3779A4" stroke-width="3"/>
+    <rect x="283" y="254" width="7" height="12" rx="2" fill="#FFF2A8"/>
+</g>
   <rect x="44" y="352" width="272" height="48" rx="24" fill="#FFFFFFE9"/>
-  <text x="180" y="383" font-family="Verdana,Arial,sans-serif" font-weight="bold" font-size="23" text-anchor="middle" fill="#55516B">Bombeiros</text>
-  </svg>
+  <text x="180" y="374" font-family="Verdana,Arial,sans-serif" font-weight="bold" font-size="19" text-anchor="middle" fill="#55516B">Caminhão de</text><text x="180" y="393" font-family="Verdana,Arial,sans-serif" font-weight="bold" font-size="19" text-anchor="middle" fill="#55516B">bombeiros</text>
+</svg>

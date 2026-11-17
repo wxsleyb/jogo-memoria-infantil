@@ -1,8 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="360" height="420" viewBox="0 0 360 420" role="img" aria-label="Ilustração de Sorvete">
-  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FCEFE9"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient><filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="9" stdDeviation="9" flood-color="#7D6C9C" flood-opacity=".20"/></filter></defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="420" viewBox="0 0 360 420" role="img" aria-label="Ilustração de Carro de sorvete">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFF2F8"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="9" stdDeviation="9" flood-color="#7D6C9C" flood-opacity=".20"/></filter>
+  </defs>
   <rect width="360" height="420" rx="24" fill="url(#bg)"/>
   <circle cx="63" cy="84" r="28" fill="#FFFFFF99"/><circle cx="301" cy="95" r="39" fill="#FFFFFF77"/><circle cx="282" cy="318" r="19" fill="#FFFFFFB2"/>
-  <g filter="url(#shadow)"><rect x="76" y="181" width="134" height="82" rx="10" fill="#F8B9CC" stroke="none" stroke-width="0"/><path d="M210 206 L254 206 L289 244 L289 266 L210 266 Z" fill="#F8B9CC" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round"/><rect x="228" y="216" width="36" height="29" rx="6" fill="#B7E1F2" stroke="none" stroke-width="0"/><rect x="110" y="190" width="66" height="22" rx="6" fill="#F5F0FF" stroke="none" stroke-width="0"/><circle cx="126" cy="201" r="9" fill="#F6A3C6"/><circle cx="145" cy="201" r="9" fill="#F4D89B"/><circle cx="132" cy="268" r="26" fill="#45566B"/><circle cx="245" cy="268" r="26" fill="#45566B"/><circle cx="132" cy="268" r="12" fill="#E8ECF2"/><circle cx="245" cy="268" r="12" fill="#E8ECF2"/><circle cx="278" cy="246" r="7" fill="#FFF0B0"/></g>
+  <g filter="url(#shadow)">
+    <rect x="82" y="193" width="183" height="76" rx="18" fill="#FFB8D3"/>
+    <path d="M218 194 H254 C266 194 276 204 276 216 V269 H218 Z" fill="#FFA4C8"/>
+    <rect x="102" y="208" width="40" height="31" rx="7" fill="#D6F1FA"/>
+    <rect x="149" y="208" width="40" height="31" rx="7" fill="#D6F1FA"/>
+    <rect x="224" y="211" width="33" height="28" rx="7" fill="#D6F1FA"/>
+    <rect x="142" y="190" width="72" height="16" rx="8" fill="#FFD34F"/>
+    <rect x="150" y="190" width="12" height="16" fill="#FF7AAE"/><rect x="172" y="190" width="12" height="16" fill="#FF7AAE"/><rect x="194" y="190" width="12" height="16" fill="#FF7AAE"/>
+    <circle cx="127" cy="270" r="24" fill="#45566B"/><circle cx="244" cy="270" r="24" fill="#45566B"/>
+    <circle cx="127" cy="270" r="11" fill="#EDF3F8"/><circle cx="244" cy="270" r="11" fill="#EDF3F8"/>
+    <path d="M142 225 H209" stroke="#FF7AAE" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="184" cy="147" r="25" fill="#FFE59A"/>
+    <path d="M184 117 C210 117 218 149 197 160 C209 173 201 192 184 192 C167 192 159 173 171 160 C150 149 158 117 184 117 Z" fill="#FF8CC0"/>
+    <path d="M173 193 H195 L187 211 H181 Z" fill="#D8A66E"/>
+    <circle cx="94" cy="225" r="6" fill="#FFF1B6"/>
+    <circle cx="270" cy="235" r="6" fill="#FFF1B6"/>
+  </g>
   <rect x="44" y="352" width="272" height="48" rx="24" fill="#FFFFFFE9"/>
-  <text x="180" y="383" font-family="Verdana,Arial,sans-serif" font-weight="bold" font-size="23" text-anchor="middle" fill="#55516B">Sorvete</text>
-  </svg>
+  <text x="180" y="383" font-family="Verdana,Arial,sans-serif" font-weight="bold" font-size="20" text-anchor="middle" fill="#55516B">Carro de sorvete</text>
+</svg>

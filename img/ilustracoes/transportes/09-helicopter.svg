@@ -1,8 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="360" height="420" viewBox="0 0 360 420" role="img" aria-label="Ilustração de Helicóptero">
-  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F9EAF4"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient><filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="9" stdDeviation="9" flood-color="#7D6C9C" flood-opacity=".20"/></filter></defs>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#EAF7FE"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="7" stdDeviation="5" flood-color="#6E6B87" flood-opacity=".22"/></filter>
+  </defs>
   <rect width="360" height="420" rx="24" fill="url(#bg)"/>
   <circle cx="63" cy="84" r="28" fill="#FFFFFF99"/><circle cx="301" cy="95" r="39" fill="#FFFFFF77"/><circle cx="282" cy="318" r="19" fill="#FFFFFFB2"/>
-  <g filter="url(#shadow)"><ellipse cx="176" cy="231" rx="94" ry="56" fill="#9ACDAA" stroke="none" stroke-width="0"/><rect x="88" y="216" width="34" height="17" rx="8" fill="#9ACDAA" stroke="none" stroke-width="0"/><rect x="252" y="234" width="47" height="16" rx="8" fill="#9ACDAA" stroke="none" stroke-width="0"/><path d="M125 172 L236 172 M181 173 L181 202" fill="none" stroke="#6A7184" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M118 279 L255 279" fill="none" stroke="#6A7184" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="170" cy="229" rx="41" ry="30" fill="#C3EBF3" stroke="none" stroke-width="0"/></g>
+  <ellipse cx="180" cy="309" rx="125" ry="12" fill="#9FA9B4" opacity=".12"/>
+  <g filter="url(#shadow)">
+    <!-- rotor principal, haste e duas pás bem definidas -->
+    <path d="M188 145 V171" stroke="#263B62" stroke-width="10" stroke-linecap="round"/>
+    <rect x="64" y="132" width="245" height="10" rx="5" fill="#20548B"/>
+    <path d="M70 130 H179" stroke="#7BD6FD" stroke-width="5" stroke-linecap="round"/>
+    <path d="M205 130 H302" stroke="#7BD6FD" stroke-width="5" stroke-linecap="round"/>
+    <path d="M238 207 L291 180 L306 190 L294 225 L239 237 Z" fill="#E75A3B" stroke="#A63335" stroke-width="4" stroke-linejoin="round"/>
+    <circle cx="294" cy="196" r="14" fill="#FFD54C" stroke="#A63335" stroke-width="4"/>
+    <path d="M294 182 V210 M280 196 H308" stroke="#A63335" stroke-width="4" stroke-linecap="round"/>
+    <path d="M127 180 C91 184 69 204 75 229 C80 257 112 270 155 270 H208 C239 270 253 251 253 227 C253 200 231 181 193 179 Z" fill="#FE6B4D" stroke="#AE3D3F" stroke-width="5"/>
+    <path d="M130 191 C103 193 90 210 93 228 C94 241 105 249 121 251 H171 V191 Z" fill="#72DDF6" stroke="#2774A5" stroke-width="3"/>
+    <path d="M183 192 H204 C224 192 237 205 237 225 V244 H183 Z" fill="#C8F7FF" stroke="#2774A5" stroke-width="3"/>
+    <path d="M181 192 V256" stroke="#AE3D3F" stroke-width="5"/>
+    <path d="M115 268 L109 287 M207 268 L216 287" stroke="#344B67" stroke-width="7" stroke-linecap="round"/>
+    <path d="M89 288 Q103 297 121 297 H224 Q241 296 247 287" fill="none" stroke="#344B67" stroke-width="8" stroke-linecap="round"/>
+    <path d="M121 185 C145 176 194 178 219 187" fill="none" stroke="#FFB294" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="237" cy="250" r="5" fill="#FFF2BD"/>
+</g>
   <rect x="44" y="352" width="272" height="48" rx="24" fill="#FFFFFFE9"/>
-  <text x="180" y="383" font-family="Verdana,Arial,sans-serif" font-weight="bold" font-size="23" text-anchor="middle" fill="#55516B">Helicóptero</text>
-  </svg>
+  <text x="180" y="383" font-family="Verdana,Arial,sans-serif" font-weight="bold" font-size="21" text-anchor="middle" fill="#55516B">Helicóptero</text>
+</svg>

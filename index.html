@@ -54,12 +54,12 @@
         <div class="setting-group difficulty-group">
           <div class="setting-heading">Escolha a dificuldade:</div>
           <div class="preset-list" role="group" aria-label="Dificuldade por quantidade de pares">
-            <button type="button" class="preset" data-pairs="6" aria-pressed="false"><span><strong>Fácil</strong><small>6 pares</small></span><b class="preset-check" aria-hidden="true">✓</b></button>
+            <button type="button" class="preset is-selected" data-pairs="6" aria-pressed="true"><span><strong>Fácil</strong><small>6 pares</small></span><b class="preset-check" aria-hidden="true">✓</b></button>
             <button type="button" class="preset" data-pairs="12" aria-pressed="false"><span><strong>Médio</strong><small>12 pares</small></span><b class="preset-check" aria-hidden="true">✓</b></button>
-            <button type="button" class="preset is-selected" data-pairs="16" aria-pressed="true"><span><strong>Difícil</strong><small>16 pares</small></span><b class="preset-check" aria-hidden="true">✓</b></button>
+            <button type="button" class="preset" data-pairs="16" aria-pressed="false"><span><strong>Difícil</strong><small>16 pares</small></span><b class="preset-check" aria-hidden="true">✓</b></button>
           </div>
           <label class="input-label" for="numPairs">Ou personalize <span>(2 a 32 pares)</span></label>
-          <div class="input-wrap"><input type="number" id="numPairs" name="numPairs" min="2" max="32" step="1" value="16" inputmode="numeric"><span>pares</span></div>
+          <div class="input-wrap"><input type="number" id="numPairs" name="numPairs" min="2" max="32" step="1" value="6" inputmode="numeric"><span>pares</span></div>
         </div>
 
         <button id="start-button" class="primary-button" type="button"><span aria-hidden="true">▶</span><span id="start-button-label">Começar a jogar!</span><span aria-hidden="true">✦</span></button>
@@ -72,13 +72,13 @@
         <div class="stats-grid" aria-label="Placar">
           <div class="stat"><span class="stat-icon violet" aria-hidden="true">🎯</span><div><small>TENTATIVAS</small><strong id="attempts-value">0</strong></div></div>
           <div class="stat"><span class="stat-icon cyan" aria-hidden="true">⏱️</span><div><small>TEMPO</small><strong id="time-value">00:00</strong></div></div>
-          <div class="stat"><span class="stat-icon pink" aria-hidden="true">⭐</span><div><small>PARES</small><strong id="pairs-value">0 <em>/ 16</em></strong></div></div>
+          <div class="stat"><span class="stat-icon pink" aria-hidden="true">⭐</span><div><small>PARES</small><strong id="pairs-value">0 <em>/ 6</em></strong></div></div>
         </div>
 
         <section class="board-panel surface" aria-labelledby="board-title">
-          <div class="board-heading"><div><span class="board-overline">✨ ÁREA DE JOGO</span><h2 id="board-title">Encontre os pares!</h2></div><span id="level-label" class="level-pill">INSANO · 16 PARES</span></div>
+          <div class="board-heading"><div><span class="board-overline">✨ ÁREA DE JOGO</span><h2 id="board-title">Encontre os pares!</h2></div><span id="level-label" class="level-pill">CASUAL · 6 PARES · BICHINHOS</span></div>
           <div class="progress-caption"><span>Seu progresso</span><span id="progress-text">0% concluído</span></div>
-          <div id="progress-track" class="progress-track" role="progressbar" aria-label="Pares encontrados" aria-valuemin="0" aria-valuemax="16" aria-valuenow="0"><span id="progress-fill" class="progress-fill"></span></div>
+          <div id="progress-track" class="progress-track" role="progressbar" aria-label="Pares encontrados" aria-valuemin="0" aria-valuemax="6" aria-valuenow="0"><span id="progress-fill" class="progress-fill"></span></div>
 
           <div class="board-stage" id="board-stage">
             <div id="game-board" class="container is-preview" aria-label="Cartas do jogo"></div>
@@ -97,7 +97,7 @@
   </div>
 
   <dialog id="win-dialog" class="win-dialog" aria-labelledby="win-title">
-    <div class="win-content"><button id="close-win" type="button" class="win-close" aria-label="Fechar resultado">×</button><span class="medal" aria-hidden="true">🏆</span><span class="win-tag">PARABÉNS! 🎉</span><h2 id="win-title">Você encontrou todos os pares!</h2><p class="win-description">Que memória incrível! Vamos brincar mais uma vez?</p><div id="win-stars" class="win-stars" aria-label="Estrelas conquistadas">★★★</div><div class="win-stats"><div><small>TEMPO</small><strong id="win-time">00:00</strong></div><div><small>TENTATIVAS</small><strong id="win-attempts">0</strong></div><div><small>PARES</small><strong id="win-pairs">16</strong></div></div><p id="win-record" class="win-record"></p><button class="primary-button" id="play-again" type="button"><span aria-hidden="true">↻</span><span>Jogar novamente</span><span aria-hidden="true">✦</span></button></div>
+    <div class="win-content"><button id="close-win" type="button" class="win-close" aria-label="Fechar resultado">×</button><span class="medal" aria-hidden="true">🏆</span><span class="win-tag">PARABÉNS! 🎉</span><h2 id="win-title">Você encontrou todos os pares!</h2><p class="win-description">Que memória incrível! Vamos brincar mais uma vez?</p><div id="win-stars" class="win-stars" aria-label="Estrelas conquistadas">★★★</div><div class="win-stats"><div><small>TEMPO</small><strong id="win-time">00:00</strong></div><div><small>TENTATIVAS</small><strong id="win-attempts">0</strong></div><div><small>PARES</small><strong id="win-pairs">6</strong></div></div><p id="win-record" class="win-record"></p><button class="primary-button" id="play-again" type="button"><span aria-hidden="true">↻</span><span>Jogar novamente</span><span aria-hidden="true">✦</span></button></div>
   </dialog>
 </body>
 </html>

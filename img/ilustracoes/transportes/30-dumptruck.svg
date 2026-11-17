@@ -1,8 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="360" height="420" viewBox="0 0 360 420" role="img" aria-label="Ilustração de Basculante">
-  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FCEFE9"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient><filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="9" stdDeviation="9" flood-color="#7D6C9C" flood-opacity=".20"/></filter></defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="420" viewBox="0 0 360 420" role="img" aria-label="Ilustração de Caminhão basculante">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FCEFE9"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="9" stdDeviation="9" flood-color="#7D6C9C" flood-opacity=".20"/></filter>
+  </defs>
   <rect width="360" height="420" rx="24" fill="url(#bg)"/>
   <circle cx="63" cy="84" r="28" fill="#FFFFFF99"/><circle cx="301" cy="95" r="39" fill="#FFFFFF77"/><circle cx="282" cy="318" r="19" fill="#FFFFFFB2"/>
-  <g filter="url(#shadow)"><rect x="76" y="181" width="134" height="82" rx="10" fill="#E6B469" stroke="none" stroke-width="0"/><path d="M210 206 L254 206 L289 244 L289 266 L210 266 Z" fill="#E6B469" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round"/><rect x="228" y="216" width="36" height="29" rx="6" fill="#B7E1F2" stroke="none" stroke-width="0"/><circle cx="132" cy="268" r="26" fill="#45566B"/><circle cx="245" cy="268" r="26" fill="#45566B"/><circle cx="132" cy="268" r="12" fill="#E8ECF2"/><circle cx="245" cy="268" r="12" fill="#E8ECF2"/><circle cx="278" cy="246" r="7" fill="#FFF0B0"/></g>
+  <g filter="url(#shadow)">
+    <rect x="85" y="215" width="100" height="50" rx="12" fill="#F1B432"/>
+    <path d="M183 226 H228 C240 226 251 233 258 244 L274 265 H183 Z" fill="#F1B432"/>
+    <rect x="198" y="233" width="30" height="23" rx="5" fill="#C9EBF7"/>
+    <path d="M170 203 H252 L271 159 H200 Q188 159 180 168 L170 182 Z" fill="#FFCD32" stroke="#D99817" stroke-width="4" stroke-linejoin="round"/>
+    <circle cx="136" cy="271" r="24" fill="#45566B"/><circle cx="245" cy="271" r="24" fill="#45566B"/>
+    <circle cx="136" cy="271" r="11" fill="#EDF3F8"/><circle cx="245" cy="271" r="11" fill="#EDF3F8"/>
+    <circle cx="199" cy="165" r="4" fill="#B07A29"/><circle cx="214" cy="156" r="4" fill="#B07A29"/><circle cx="228" cy="164" r="4" fill="#B07A29"/><circle cx="243" cy="154" r="4" fill="#B07A29"/>
+    <circle cx="282" cy="273" r="7" fill="#B07A29"/><circle cx="295" cy="286" r="5" fill="#B07A29"/><circle cx="276" cy="291" r="4" fill="#B07A29"/>
+    <circle cx="265" cy="246" r="6" fill="#FFF1B6"/>
+  </g>
   <rect x="44" y="352" width="272" height="48" rx="24" fill="#FFFFFFE9"/>
-  <text x="180" y="383" font-family="Verdana,Arial,sans-serif" font-weight="bold" font-size="23" text-anchor="middle" fill="#55516B">Basculante</text>
-  </svg>
+  <text x="180" y="383" font-family="Verdana,Arial,sans-serif" font-weight="bold" font-size="17.5" text-anchor="middle" fill="#55516B">Caminhão basculante</text>
+</svg>

@@ -1,8 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="360" height="420" viewBox="0 0 360 420" role="img" aria-label="Ilustração de Trem">
-  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FCEFE9"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient><filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="9" stdDeviation="9" flood-color="#7D6C9C" flood-opacity=".20"/></filter></defs>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FCEFE9"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="9" stdDeviation="9" flood-color="#7D6C9C" flood-opacity=".20"/></filter>
+  </defs>
   <rect width="360" height="420" rx="24" fill="url(#bg)"/>
   <circle cx="63" cy="84" r="28" fill="#FFFFFF99"/><circle cx="301" cy="95" r="39" fill="#FFFFFF77"/><circle cx="282" cy="318" r="19" fill="#FFFFFFB2"/>
-  <g filter="url(#shadow)"><rect x="74" y="171" width="215" height="103" rx="22" fill="#A897DD" stroke="none" stroke-width="0"/><rect x="102" y="187" width="44" height="38" rx="8" fill="#CCF0F7" stroke="none" stroke-width="0"/><rect x="157" y="187" width="44" height="38" rx="8" fill="#CCF0F7" stroke="none" stroke-width="0"/><rect x="212" y="187" width="44" height="38" rx="8" fill="#CCF0F7" stroke="none" stroke-width="0"/><circle cx="132" cy="268" r="26" fill="#45566B"/><circle cx="245" cy="268" r="26" fill="#45566B"/><circle cx="132" cy="268" r="12" fill="#E8ECF2"/><circle cx="245" cy="268" r="12" fill="#E8ECF2"/><circle cx="278" cy="246" r="7" fill="#FFF0B0"/></g>
+  <g filter="url(#shadow)">
+    <path d="M72 283 H293" stroke="#766B86" stroke-width="8" stroke-linecap="round"/>
+    <path d="M82 297 H288" stroke="#A69AB8" stroke-width="5" stroke-linecap="round"/>
+    <g stroke="#766B86" stroke-width="6"><path d="M102 278 V302"/><path d="M150 278 V302"/><path d="M198 278 V302"/><path d="M246 278 V302"/></g>
+    <rect x="198" y="199" width="78" height="62" rx="15" fill="#F3C557"/>
+    <rect x="208" y="211" width="17" height="18" rx="4" fill="#D5F0F8"/>
+    <rect x="230" y="211" width="17" height="18" rx="4" fill="#D5F0F8"/>
+    <rect x="251" y="211" width="15" height="18" rx="4" fill="#D5F0F8"/>
+    <circle cx="215" cy="265" r="19" fill="#45566B"/><circle cx="255" cy="265" r="19" fill="#45566B"/>
+    <circle cx="215" cy="265" r="9" fill="#EDF3F8"/><circle cx="255" cy="265" r="9" fill="#EDF3F8"/>
+    <path d="M112 188 H187 C203 188 215 201 215 218 V255 H98 V202 C98 194 104 188 112 188 Z" fill="#E65252"/>
+    <rect x="108" y="201" width="43" height="31" rx="8" fill="#D8F2F7"/>
+    <circle cx="118" cy="264" r="24" fill="#45566B"/><circle cx="118" cy="264" r="11" fill="#EDF3F8"/>
+    <circle cx="174" cy="264" r="24" fill="#45566B"/><circle cx="174" cy="264" r="11" fill="#EDF3F8"/>
+    <circle cx="103" cy="229" r="7" fill="#FFF1B6"/>
+    <circle cx="201" cy="230" r="6" fill="#FFF1B6"/>
+    <rect x="156" y="168" width="13" height="26" rx="4" fill="#4B93D8"/>
+    <rect x="150" y="153" width="26" height="19" rx="6" fill="#4B93D8"/>
+    <circle cx="160" cy="141" r="16" fill="#FFFFFFA8"/><circle cx="180" cy="127" r="12" fill="#FFFFFFC0"/><circle cx="195" cy="139" r="10" fill="#FFFFFF8A"/>
+    <path d="M87 255 H281" stroke="#333B51" stroke-width="5" stroke-linecap="round" opacity=".2"/>
+  </g>
   <rect x="44" y="352" width="272" height="48" rx="24" fill="#FFFFFFE9"/>
   <text x="180" y="383" font-family="Verdana,Arial,sans-serif" font-weight="bold" font-size="23" text-anchor="middle" fill="#55516B">Trem</text>
-  </svg>
+</svg>

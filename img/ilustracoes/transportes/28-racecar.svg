@@ -1,8 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="360" height="420" viewBox="0 0 360 420" role="img" aria-label="Ilustração de Corrida">
-  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#EAF5E8"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient><filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="9" stdDeviation="9" flood-color="#7D6C9C" flood-opacity=".20"/></filter></defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="420" viewBox="0 0 360 420" role="img" aria-label="Ilustração de Carro de corrida">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#EEF8FF"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="9" stdDeviation="9" flood-color="#7D6C9C" flood-opacity=".20"/></filter>
+  </defs>
   <rect width="360" height="420" rx="24" fill="url(#bg)"/>
   <circle cx="63" cy="84" r="28" fill="#FFFFFF99"/><circle cx="301" cy="95" r="39" fill="#FFFFFF77"/><circle cx="282" cy="318" r="19" fill="#FFFFFFB2"/>
-  <g filter="url(#shadow)"><rect x="91" y="214" width="184" height="58" rx="17" fill="#E98488" stroke="none" stroke-width="0"/><path d="M123 215 L151 171 L230 171 L256 215 Z" fill="#E98488" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round"/><path d="M162 185 L216 185 L233 213 L139 213 Z" fill="#CAEAF3" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round"/><path d="M93 238 L276 238" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="132" cy="268" r="26" fill="#45566B"/><circle cx="245" cy="268" r="26" fill="#45566B"/><circle cx="132" cy="268" r="12" fill="#E8ECF2"/><circle cx="245" cy="268" r="12" fill="#E8ECF2"/><circle cx="278" cy="246" r="7" fill="#FFF0B0"/></g>
+  <g filter="url(#shadow)">
+    <path d="M69 270 H295" stroke="#D8EAF7" stroke-width="8" stroke-linecap="round"/>
+    <path d="M92 258 H236 L252 230 H278 L286 244 H303 V268 H92 Z" fill="#E53F3F"/>
+    <path d="M130 258 L158 219 H211 L228 258 Z" fill="#FF6A52"/>
+    <path d="M160 225 H205 L216 257 H146 Z" fill="#CDEFFC"/>
+    <rect x="263" y="214" width="10" height="34" rx="4" fill="#7A2134"/>
+    <rect x="246" y="212" width="46" height="11" rx="5" fill="#F4C334"/>
+    <rect x="94" y="249" width="26" height="10" rx="4" fill="#F4C334"/>
+    <rect x="84" y="245" width="11" height="20" rx="4" fill="#F4C334"/>
+    <circle cx="136" cy="270" r="25" fill="#414C62"/><circle cx="249" cy="270" r="25" fill="#414C62"/>
+    <circle cx="136" cy="270" r="11" fill="#EDF3F8"/><circle cx="249" cy="270" r="11" fill="#EDF3F8"/>
+    <circle cx="184" cy="240" r="15" fill="#31425C"/>
+    <text x="182" y="245" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#FFFFFF" font-weight="700">1</text>
+  </g>
   <rect x="44" y="352" width="272" height="48" rx="24" fill="#FFFFFFE9"/>
-  <text x="180" y="383" font-family="Verdana,Arial,sans-serif" font-weight="bold" font-size="23" text-anchor="middle" fill="#55516B">Corrida</text>
-  </svg>
+  <text x="180" y="383" font-family="Verdana,Arial,sans-serif" font-weight="bold" font-size="20" text-anchor="middle" fill="#55516B">Carro de corrida</text>
+</svg>

@@ -385,7 +385,7 @@ window.BIBLIOTECA_LOCAL = {
       "origem": "arte-original-inclusa"
     },
     {
-      "nome": "Bombeiros",
+      "nome": "Caminhão de bombeiros",
       "src": "img/ilustracoes/transportes/13-firetruck.svg",
       "origem": "arte-original-inclusa"
     },
@@ -430,7 +430,7 @@ window.BIBLIOTECA_LOCAL = {
       "origem": "arte-original-inclusa"
     },
     {
-      "nome": "Sorvete",
+      "nome": "Carro de sorvete",
       "src": "img/ilustracoes/transportes/22-icecreamtruck.svg",
       "origem": "arte-original-inclusa"
     },
@@ -460,7 +460,7 @@ window.BIBLIOTECA_LOCAL = {
       "origem": "arte-original-inclusa"
     },
     {
-      "nome": "Corrida",
+      "nome": "Carro de corrida",
       "src": "img/ilustracoes/transportes/28-racecar.svg",
       "origem": "arte-original-inclusa"
     },
@@ -470,7 +470,7 @@ window.BIBLIOTECA_LOCAL = {
       "origem": "arte-original-inclusa"
     },
     {
-      "nome": "Basculante",
+      "nome": "Caminhão basculante",
       "src": "img/ilustracoes/transportes/30-dumptruck.svg",
       "origem": "arte-original-inclusa"
     },

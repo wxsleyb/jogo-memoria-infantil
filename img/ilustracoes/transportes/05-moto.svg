@@ -1,8 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="360" height="420" viewBox="0 0 360 420" role="img" aria-label="Ilustração de Moto">
-  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F1EBFD"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient><filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="9" stdDeviation="9" flood-color="#7D6C9C" flood-opacity=".20"/></filter></defs>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFF5E6"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="7" stdDeviation="5" flood-color="#6E6B87" flood-opacity=".22"/></filter>
+  </defs>
   <rect width="360" height="420" rx="24" fill="url(#bg)"/>
   <circle cx="63" cy="84" r="28" fill="#FFFFFF99"/><circle cx="301" cy="95" r="39" fill="#FFFFFF77"/><circle cx="282" cy="318" r="19" fill="#FFFFFFB2"/>
-  <g filter="url(#shadow)"><circle cx="115" cy="274" r="35" fill="#52627C"/><circle cx="247" cy="274" r="35" fill="#52627C"/><circle cx="115" cy="274" r="23" fill="#EAF5FF"/><circle cx="247" cy="274" r="23" fill="#EAF5FF"/><path d="M128 249 L177 209 L217 238 L250 248" fill="#E68C9D" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round"/><rect x="164" y="192" width="63" height="32" rx="9" fill="#5D627D" stroke="none" stroke-width="0"/></g>
+  <ellipse cx="180" cy="309" rx="125" ry="12" fill="#9FA9B4" opacity=".12"/>
+  <g filter="url(#shadow)">
+    <!-- duas rodas separadas, garfo, guidão, tanque, banco e escapamento -->
+    <circle cx="111" cy="274" r="38" fill="#33435B" stroke="#21364D" stroke-width="5"/>
+    <circle cx="111" cy="274" r="23" fill="#F1FAFF" stroke="#9FB2C6" stroke-width="5"/>
+    <circle cx="253" cy="274" r="38" fill="#33435B" stroke="#21364D" stroke-width="5"/>
+    <circle cx="253" cy="274" r="23" fill="#F1FAFF" stroke="#9FB2C6" stroke-width="5"/>
+    <path d="M114 272 L163 209 L207 257 L253 272" fill="none" stroke="#606F7E" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M159 215 L212 215 Q237 220 235 239 L205 246 L151 235 Z" fill="#F04B4C" stroke="#AD3444" stroke-width="4"/>
+    <path d="M164 216 Q194 196 224 215" fill="none" stroke="#FF9B83" stroke-width="5" stroke-linecap="round"/>
+    <path d="M211 250 L160 256 L150 273 L214 272" fill="none" stroke="#717D8D" stroke-width="11" stroke-linecap="round"/>
+    <circle cx="183" cy="261" r="17" fill="#ADBEC7" stroke="#50607A" stroke-width="5"/>
+    <path d="M223 236 L248 258 L274 258" fill="none" stroke="#D9E1E5" stroke-width="11" stroke-linecap="round"/>
+    <path d="M235 223 L259 181 L276 189" fill="none" stroke="#4A5E73" stroke-width="8" stroke-linecap="round"/>
+    <path d="M254 180 L270 176" stroke="#4A5E73" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="265" cy="205" r="14" fill="#FFE271" stroke="#EEAD35" stroke-width="4"/>
+    <rect x="134" y="200" width="73" height="15" rx="7" fill="#3D475A"/>
+    <path d="M143 207 L134 226" stroke="#3D475A" stroke-width="7" stroke-linecap="round"/>
+    <path d="M146 245 H125" stroke="#3D475A" stroke-width="6" stroke-linecap="round"/>
+</g>
   <rect x="44" y="352" width="272" height="48" rx="24" fill="#FFFFFFE9"/>
   <text x="180" y="383" font-family="Verdana,Arial,sans-serif" font-weight="bold" font-size="23" text-anchor="middle" fill="#55516B">Moto</text>
-  </svg>
+</svg>

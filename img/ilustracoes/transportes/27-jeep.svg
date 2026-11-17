@@ -1,8 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="360" height="420" viewBox="0 0 360 420" role="img" aria-label="Ilustração de Jipe">
-  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FCF0DC"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient><filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="9" stdDeviation="9" flood-color="#7D6C9C" flood-opacity=".20"/></filter></defs>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F0FBE7"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="7" stdDeviation="5" flood-color="#6E6B87" flood-opacity=".22"/></filter>
+  </defs>
   <rect width="360" height="420" rx="24" fill="url(#bg)"/>
   <circle cx="63" cy="84" r="28" fill="#FFFFFF99"/><circle cx="301" cy="95" r="39" fill="#FFFFFF77"/><circle cx="282" cy="318" r="19" fill="#FFFFFFB2"/>
-  <g filter="url(#shadow)"><rect x="91" y="214" width="184" height="58" rx="17" fill="#8CB69E" stroke="none" stroke-width="0"/><path d="M123 215 L151 171 L230 171 L256 215 Z" fill="#8CB69E" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round"/><path d="M162 185 L216 185 L233 213 L139 213 Z" fill="#CAEAF3" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round"/><circle cx="132" cy="268" r="26" fill="#45566B"/><circle cx="245" cy="268" r="26" fill="#45566B"/><circle cx="132" cy="268" r="12" fill="#E8ECF2"/><circle cx="245" cy="268" r="12" fill="#E8ECF2"/><circle cx="278" cy="246" r="7" fill="#FFF0B0"/></g>
+  <ellipse cx="180" cy="309" rx="125" ry="12" fill="#9FA9B4" opacity=".12"/>
+  <g filter="url(#shadow)">
+    <!-- jipe fora de estrada sem teto, arco de proteção e pneus grandes -->
+    <path d="M89 249 Q101 238 127 238 H242 Q270 238 286 255 V272 H86 V258 Z" fill="#F6A73A" stroke="#B56B26" stroke-width="5"/>
+    <path d="M123 239 L145 191 H236 L259 240" fill="none" stroke="#4C586B" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M148 192 H237" stroke="#4C586B" stroke-width="9" stroke-linecap="round"/>
+    <path d="M145 201 L136 239" stroke="#E1F5FB" stroke-width="7" stroke-linecap="round"/>
+    <path d="M155 199 H211 V238 H145 Z" fill="#A8E5F1" stroke="#3C7188" stroke-width="4"/>
+    <path d="M219 200 H239 L254 239 H219 Z" fill="#A8E5F1" stroke="#3C7188" stroke-width="4"/>
+    <rect x="147" y="222" width="65" height="20" rx="8" fill="#E49A46"/>
+    <path d="M97 249 H131 V270 H97 Z" fill="#ED8E2B"/>
+    <rect x="105" y="236" width="26" height="10" rx="5" fill="#D87427"/>
+    <circle cx="131" cy="276" r="31" fill="#39445A" stroke="#293448" stroke-width="5"/>
+    <circle cx="131" cy="276" r="15" fill="#E9EDF3"/>
+    <circle cx="251" cy="276" r="31" fill="#39445A" stroke="#293448" stroke-width="5"/>
+    <circle cx="251" cy="276" r="15" fill="#E9EDF3"/>
+    <path d="M269 243 L293 248 V263 H269 Z" fill="#D88C31"/>
+    <circle cx="286" cy="253" r="6" fill="#FFF2AE"/>
+    <path d="M92 260 H111" stroke="#62707C" stroke-width="9" stroke-linecap="round"/>
+    <path d="M142 237 H235" stroke="#F6C263" stroke-width="5" stroke-linecap="round"/>
+</g>
   <rect x="44" y="352" width="272" height="48" rx="24" fill="#FFFFFFE9"/>
   <text x="180" y="383" font-family="Verdana,Arial,sans-serif" font-weight="bold" font-size="23" text-anchor="middle" fill="#55516B">Jipe</text>
-  </svg>
+</svg>

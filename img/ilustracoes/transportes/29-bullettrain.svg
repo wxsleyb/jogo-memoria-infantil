@@ -1,8 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="360" height="420" viewBox="0 0 360 420" role="img" aria-label="Ilustração de Trem-bala">
-  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F1EBFD"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient><filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="9" stdDeviation="9" flood-color="#7D6C9C" flood-opacity=".20"/></filter></defs>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F1EBFD"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="9" stdDeviation="9" flood-color="#7D6C9C" flood-opacity=".20"/></filter>
+  </defs>
   <rect width="360" height="420" rx="24" fill="url(#bg)"/>
   <circle cx="63" cy="84" r="28" fill="#FFFFFF99"/><circle cx="301" cy="95" r="39" fill="#FFFFFF77"/><circle cx="282" cy="318" r="19" fill="#FFFFFFB2"/>
-  <g filter="url(#shadow)"><rect x="74" y="171" width="215" height="103" rx="22" fill="#B1C8D4" stroke="none" stroke-width="0"/><rect x="102" y="187" width="44" height="38" rx="8" fill="#CCF0F7" stroke="none" stroke-width="0"/><rect x="157" y="187" width="44" height="38" rx="8" fill="#CCF0F7" stroke="none" stroke-width="0"/><rect x="212" y="187" width="44" height="38" rx="8" fill="#CCF0F7" stroke="none" stroke-width="0"/><path d="M74 210 L107 168 L283 168 L283 268 L74 268 Z" fill="#B1C8D4" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round"/><circle cx="132" cy="268" r="26" fill="#45566B"/><circle cx="245" cy="268" r="26" fill="#45566B"/><circle cx="132" cy="268" r="12" fill="#E8ECF2"/><circle cx="245" cy="268" r="12" fill="#E8ECF2"/><circle cx="278" cy="246" r="7" fill="#FFF0B0"/></g>
+  <g filter="url(#shadow)">
+    <path d="M70 286 H292" stroke="#766B86" stroke-width="6" stroke-linecap="round" opacity=".45"/>
+    <path d="M82 298 H285" stroke="#A69AB8" stroke-width="4" stroke-linecap="round" opacity=".55"/>
+    <path d="M88 255 C110 196 161 166 251 169 C273 170 285 183 285 199 V249 C285 259 278 266 268 266 H118 C102 266 90 265 88 255 Z" fill="#F7FBFF"/>
+    <path d="M98 253 C118 210 165 183 246 185 H285 V238 H98 Z" fill="#DDF0FB"/>
+    <path d="M96 253 C108 227 138 205 171 195 C194 188 219 185 248 185 H285 V208 H146 C126 208 111 223 104 239 Z" fill="#2F7FD6" opacity=".14"/>
+    <path d="M104 255 H279" stroke="#ED5056" stroke-width="6" stroke-linecap="round"/>
+    <rect x="183" y="203" width="24" height="15" rx="4" fill="#97C6E8"/>
+    <rect x="214" y="203" width="24" height="15" rx="4" fill="#97C6E8"/>
+    <rect x="245" y="203" width="20" height="15" rx="4" fill="#97C6E8"/>
+    <circle cx="145" cy="270" r="6" fill="#5E6577"/><circle cx="184" cy="270" r="6" fill="#5E6577"/><circle cx="223" cy="270" r="6" fill="#5E6577"/>
+  </g>
   <rect x="44" y="352" width="272" height="48" rx="24" fill="#FFFFFFE9"/>
   <text x="180" y="383" font-family="Verdana,Arial,sans-serif" font-weight="bold" font-size="23" text-anchor="middle" fill="#55516B">Trem-bala</text>
-  </svg>
+</svg>
