@@ -1,6 +1,6 @@
 # JOGO DA MEMÓRIA — Parquinho Colorido
 
-Versão infantil do jogo da memória feita com **HTML, CSS e JavaScript puro**. O visual Arcade Neon foi substituído por uma interface clara e divertida, com cenário de parquinho, painéis arredondados e botões coloridos.
+Versão infantil do jogo da memória feita com **HTML, CSS e JavaScript puro**. O visual Arcade Neon foi substituído por uma interface clara e divertida, com cenário de parquinho, painéis arredondados e botões coloridos. Acesse pelo link: https://wxsleyb.github.io/jogo-memoria-infantil/
 
 ## Abrir o jogo
 
