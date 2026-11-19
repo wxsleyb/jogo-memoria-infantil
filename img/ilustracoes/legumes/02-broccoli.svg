@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="420" viewBox="0 0 360 420" role="img" aria-label="Ilustração de Brócolis">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E9FAED"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#7D6C9C" flood-opacity=".18"/></filter>
+</defs>
+<rect width="360" height="420" rx="24" fill="url(#bg)"/>
+<circle cx="63" cy="84" r="28" fill="#FFFFFF99"/><circle cx="301" cy="95" r="39" fill="#FFFFFF77"/>
+<g filter="url(#shadow)">
+<rect x="165" y="208" width="30" height="70" rx="14" fill="#84D08B"/>
+<path d="M167 218 C146 215 129 205 119 191" stroke="#72BE79" stroke-width="10" stroke-linecap="round" fill="none"/>
+<path d="M193 218 C214 215 231 205 241 191" stroke="#72BE79" stroke-width="10" stroke-linecap="round" fill="none"/>
+<circle cx="138" cy="183" r="31" fill="#57B56A"/><circle cx="173" cy="160" r="36" fill="#69C679"/><circle cx="214" cy="164" r="34" fill="#63C274"/><circle cx="226" cy="195" r="28" fill="#54B267"/><circle cx="154" cy="202" r="28" fill="#4EAA61"/><circle cx="191" cy="195" r="29" fill="#58B76B"/>
+</g>
+<rect x="44" y="352" width="272" height="48" rx="24" fill="#FFFFFFE9"/>
+<text x="180" y="383" font-family="Verdana, Arial, sans-serif" font-weight="bold" font-size="23" text-anchor="middle" fill="#55516B">Brócolis</text>
+</svg>

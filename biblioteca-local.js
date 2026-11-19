@@ -484,5 +484,209 @@ window.BIBLIOTECA_LOCAL = {
       "src": "img/ilustracoes/transportes/32-airship.svg",
       "origem": "arte-original-inclusa"
     }
+  ],
+  "legumes": [
+    {
+      "nome": "Cenoura",
+      "src": "img/ilustracoes/legumes/01-carrot.svg",
+      "origem": "arte-original-inclusa"
+    },
+    {
+      "nome": "Brócolis",
+      "src": "img/ilustracoes/legumes/02-broccoli.svg",
+      "origem": "arte-original-inclusa"
+    },
+    {
+      "nome": "Tomate",
+      "src": "img/ilustracoes/legumes/03-tomato.svg",
+      "origem": "arte-original-inclusa"
+    },
+    {
+      "nome": "Milho",
+      "src": "img/ilustracoes/legumes/04-corn.svg",
+      "origem": "arte-original-inclusa"
+    },
+    {
+      "nome": "Abóbora",
+      "src": "img/ilustracoes/legumes/05-pumpkin.svg",
+      "origem": "arte-original-inclusa"
+    },
+    {
+      "nome": "Pepino",
+      "src": "img/ilustracoes/legumes/06-cucumber.svg",
+      "origem": "arte-original-inclusa"
+    },
+    {
+      "nome": "Batata",
+      "src": "img/ilustracoes/legumes/07-potato.svg",
+      "origem": "arte-original-inclusa"
+    },
+    {
+      "nome": "Cebola",
+      "src": "img/ilustracoes/legumes/08-onion.svg",
+      "origem": "arte-original-inclusa"
+    },
+    {
+      "nome": "Berinjela",
+      "src": "img/ilustracoes/legumes/09-eggplant.svg",
+      "origem": "arte-original-inclusa"
+    },
+    {
+      "nome": "Alface",
+      "src": "img/ilustracoes/legumes/10-lettuce.svg",
+      "origem": "arte-original-inclusa"
+    },
+    {
+      "nome": "Beterraba",
+      "src": "img/ilustracoes/legumes/11-beet.svg",
+      "origem": "arte-original-inclusa"
+    },
+    {
+      "nome": "Couve-flor",
+      "src": "img/ilustracoes/legumes/12-cauliflower.svg",
+      "origem": "arte-original-inclusa"
+    },
+    {
+      "nome": "Pimentão",
+      "src": "img/ilustracoes/legumes/13-pepper.svg",
+      "origem": "arte-original-inclusa"
+    },
+    {
+      "nome": "Ervilhas",
+      "src": "img/ilustracoes/legumes/14-peas.svg",
+      "origem": "arte-original-inclusa"
+    },
+    {
+      "nome": "Alho",
+      "src": "img/ilustracoes/legumes/15-garlic.svg",
+      "origem": "arte-original-inclusa"
+    },
+    {
+      "nome": "Repolho",
+      "src": "img/ilustracoes/legumes/16-cabbage.svg",
+      "origem": "arte-original-inclusa"
+    },
+    {
+      "nome": "Mandioca",
+      "src": "img/ilustracoes/legumes/17-cassava.svg",
+      "origem": "arte-original-inclusa"
+    },
+    {
+      "nome": "Espinafre",
+      "src": "img/ilustracoes/legumes/18-spinach.svg",
+      "origem": "arte-original-inclusa"
+    },
+    {
+      "nome": "Rabanete",
+      "src": "img/ilustracoes/legumes/19-radish.svg",
+      "origem": "arte-original-inclusa"
+    },
+    {
+      "nome": "Cogumelo",
+      "src": "img/ilustracoes/legumes/20-mushroom.svg",
+      "origem": "arte-original-inclusa"
+    }
+  ],
+  "numeros": [
+    {
+      "nome": "Número 1",
+      "src": "img/ilustracoes/numeros/01-1.svg",
+      "origem": "arte-original-inclusa"
+    },
+    {
+      "nome": "Número 2",
+      "src": "img/ilustracoes/numeros/02-2.svg",
+      "origem": "arte-original-inclusa"
+    },
+    {
+      "nome": "Número 3",
+      "src": "img/ilustracoes/numeros/03-3.svg",
+      "origem": "arte-original-inclusa"
+    },
+    {
+      "nome": "Número 4",
+      "src": "img/ilustracoes/numeros/04-4.svg",
+      "origem": "arte-original-inclusa"
+    },
+    {
+      "nome": "Número 5",
+      "src": "img/ilustracoes/numeros/05-5.svg",
+      "origem": "arte-original-inclusa"
+    },
+    {
+      "nome": "Número 6",
+      "src": "img/ilustracoes/numeros/06-6.svg",
+      "origem": "arte-original-inclusa"
+    },
+    {
+      "nome": "Número 7",
+      "src": "img/ilustracoes/numeros/07-7.svg",
+      "origem": "arte-original-inclusa"
+    },
+    {
+      "nome": "Número 8",
+      "src": "img/ilustracoes/numeros/08-8.svg",
+      "origem": "arte-original-inclusa"
+    },
+    {
+      "nome": "Número 9",
+      "src": "img/ilustracoes/numeros/09-9.svg",
+      "origem": "arte-original-inclusa"
+    },
+    {
+      "nome": "Número 10",
+      "src": "img/ilustracoes/numeros/10-10.svg",
+      "origem": "arte-original-inclusa"
+    },
+    {
+      "nome": "Número 11",
+      "src": "img/ilustracoes/numeros/11-11.svg",
+      "origem": "arte-original-inclusa"
+    },
+    {
+      "nome": "Número 12",
+      "src": "img/ilustracoes/numeros/12-12.svg",
+      "origem": "arte-original-inclusa"
+    },
+    {
+      "nome": "Número 13",
+      "src": "img/ilustracoes/numeros/13-13.svg",
+      "origem": "arte-original-inclusa"
+    },
+    {
+      "nome": "Número 14",
+      "src": "img/ilustracoes/numeros/14-14.svg",
+      "origem": "arte-original-inclusa"
+    },
+    {
+      "nome": "Número 15",
+      "src": "img/ilustracoes/numeros/15-15.svg",
+      "origem": "arte-original-inclusa"
+    },
+    {
+      "nome": "Número 16",
+      "src": "img/ilustracoes/numeros/16-16.svg",
+      "origem": "arte-original-inclusa"
+    },
+    {
+      "nome": "Número 17",
+      "src": "img/ilustracoes/numeros/17-17.svg",
+      "origem": "arte-original-inclusa"
+    },
+    {
+      "nome": "Número 18",
+      "src": "img/ilustracoes/numeros/18-18.svg",
+      "origem": "arte-original-inclusa"
+    },
+    {
+      "nome": "Número 19",
+      "src": "img/ilustracoes/numeros/19-19.svg",
+      "origem": "arte-original-inclusa"
+    },
+    {
+      "nome": "Número 20",
+      "src": "img/ilustracoes/numeros/20-20.svg",
+      "origem": "arte-original-inclusa"
+    }
   ]
 };

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="420" viewBox="0 0 360 420" role="img" aria-label="Ilustração de Abóbora">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFF2E4"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#7D6C9C" flood-opacity=".18"/></filter>
+</defs>
+<rect width="360" height="420" rx="24" fill="url(#bg)"/>
+<circle cx="63" cy="84" r="28" fill="#FFFFFF99"/><circle cx="301" cy="95" r="39" fill="#FFFFFF77"/>
+<g filter="url(#shadow)">
+<ellipse cx="180" cy="212" rx="78" ry="60" fill="#F59A34"/>
+<ellipse cx="145" cy="212" rx="28" ry="57" fill="#F7A944"/>
+<ellipse cx="215" cy="212" rx="28" ry="57" fill="#F7A944"/>
+<ellipse cx="180" cy="212" rx="16" ry="59" fill="#F7A944"/>
+<path d="M180 148 C180 129 188 114 201 105" stroke="#6DB55D" stroke-width="10" stroke-linecap="round" fill="none"/>
+<path d="M180 149 C165 136 150 131 138 135" stroke="#7BB85D" stroke-width="8" stroke-linecap="round" fill="none"/>
+</g>
+<rect x="44" y="352" width="272" height="48" rx="24" fill="#FFFFFFE9"/>
+<text x="180" y="383" font-family="Verdana, Arial, sans-serif" font-weight="bold" font-size="23" text-anchor="middle" fill="#55516B">Abóbora</text>
+</svg>

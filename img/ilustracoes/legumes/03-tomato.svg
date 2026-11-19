@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="420" viewBox="0 0 360 420" role="img" aria-label="Ilustração de Tomate">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFF1EC"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#7D6C9C" flood-opacity=".18"/></filter>
+</defs>
+<rect width="360" height="420" rx="24" fill="url(#bg)"/>
+<circle cx="63" cy="84" r="28" fill="#FFFFFF99"/><circle cx="301" cy="95" r="39" fill="#FFFFFF77"/>
+<g filter="url(#shadow)">
+<circle cx="180" cy="205" r="74" fill="#F05349"/>
+<path d="M180 132 C168 123 155 117 143 118 C152 134 155 145 153 158 M180 132 C192 123 205 117 217 118 C208 134 205 145 207 158 M180 132 C181 119 187 106 198 97 C185 98 174 104 166 115" stroke="#64B96A" stroke-width="10" stroke-linecap="round" fill="none"/>
+<path d="M145 187 C165 178 195 178 215 187" stroke="#F47D6A" stroke-width="8" fill="none" stroke-linecap="round" opacity=".8"/>
+</g>
+<rect x="44" y="352" width="272" height="48" rx="24" fill="#FFFFFFE9"/>
+<text x="180" y="383" font-family="Verdana, Arial, sans-serif" font-weight="bold" font-size="23" text-anchor="middle" fill="#55516B">Tomate</text>
+</svg>

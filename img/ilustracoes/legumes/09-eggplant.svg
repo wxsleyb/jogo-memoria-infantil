@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="420" viewBox="0 0 360 420" role="img" aria-label="Ilustração de Berinjela">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F6ECFF"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#7D6C9C" flood-opacity=".18"/></filter>
+</defs>
+<rect width="360" height="420" rx="24" fill="url(#bg)"/>
+<circle cx="63" cy="84" r="28" fill="#FFFFFF99"/><circle cx="301" cy="95" r="39" fill="#FFFFFF77"/>
+<g filter="url(#shadow)">
+<path d="M221 126 C176 134 133 176 138 233 C143 281 208 289 226 238 C242 195 229 153 221 126 Z" fill="#8052B5"/>
+<path d="M219 126 C232 114 246 108 260 108 C256 127 248 141 234 151" fill="#69B969"/>
+<path d="M170 168 C180 196 197 223 214 238" stroke="#A788D3" stroke-width="6" fill="none" stroke-linecap="round"/>
+</g>
+<rect x="44" y="352" width="272" height="48" rx="24" fill="#FFFFFFE9"/>
+<text x="180" y="383" font-family="Verdana, Arial, sans-serif" font-weight="bold" font-size="23" text-anchor="middle" fill="#55516B">Berinjela</text>
+</svg>

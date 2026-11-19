@@ -5,7 +5,7 @@
 const $ = (s) => document.querySelector(s);
 const ui = {
   board: $('#game-board'), stage: $('#board-stage'), hint: $('#board-hint'),
-  input: $('#numPairs'), presets: [...document.querySelectorAll('.preset')],
+  presets: [...document.querySelectorAll('.preset')],
   themes: [...document.querySelectorAll('.theme')], start: $('#start-button'),
   startLabel: $('#start-button-label'), previewStart: $('#preview-start'), status: $('#setup-message'),
   time: $('#time-value'), attempts: $('#attempts-value'), pairs: $('#pairs-value'),
@@ -25,7 +25,7 @@ const game = {
   elapsed: 0, resumeAt: 0, tick: null, flipTimeout: null,
   version: 0, zoom: 1, sound: false
 };
-const THEME_NAMES = {animais:'BICHINHOS',frutas:'FRUTINHAS',transportes:'VEÍCULOS',todos:'TODOS'};
+const THEME_NAMES = {animais:'BICHINHOS',frutas:'FRUTINHAS',transportes:'VEÍCULOS',legumes:'LEGUMES',numeros:'NÚMEROS',todos:'TODOS'};
 
 function shuffle(items) {
   const list = [...items];
@@ -34,13 +34,13 @@ function shuffle(items) {
   }
   return list;
 }
-function readPairs(){const n=Number(ui.input.value);return Number.isInteger(n)&&n>=2&&n<=32?n:null;}
+function readPairs(){return Number(ui.presets.find((b)=>b.classList.contains('is-selected'))?.dataset.pairs||game.pairs);}
 function selectedTheme(){return ui.themes.find((b)=>b.classList.contains('is-selected'))?.dataset.theme||'animais';}
-function selectedPairs(){return readPairs()??game.pairs;}
-function difficulty(p){return p===6?'CASUAL':p===12?'INTERMEDIÁRIO':p===16?'INSANO':'PERSONALIZADO';}
+function selectedPairs(){return readPairs();}
+function difficulty(p){return p===6?'FÁCIL':p===12?'MÉDIO':p===16?'DIFÍCIL':'PERSONALIZADO';}
 function message(text,error=false){ui.status.textContent=text;ui.status.classList.toggle('is-error',error);}
 function labelFor(p,theme){ui.level.textContent=`${difficulty(p)} · ${p} PARES · ${THEME_NAMES[theme]}`;}
-function updatePreset(){const p=readPairs();ui.presets.forEach(b=>{const on=Number(b.dataset.pairs)===p;b.classList.toggle('is-selected',on);b.setAttribute('aria-pressed',String(on));});if(game.state==='ready'){updateReadyPreview();}}
+function updatePreset(p=readPairs()){ui.presets.forEach(b=>{const on=Number(b.dataset.pairs)===Number(p);b.classList.toggle('is-selected',on);b.setAttribute('aria-pressed',String(on));});if(game.state==='ready'){updateReadyPreview();}}
 function changeTheme(theme){if(!THEME_NAMES[theme])return;ui.themes.forEach(b=>{const on=b.dataset.theme===theme;b.classList.toggle('is-selected',on);b.setAttribute('aria-pressed',String(on));});if(game.state==='ready')updateReadyPreview();else message('O novo tema será usado quando você iniciar outra partida.');}
 function updateBoardColumns(p,preview=false){
   const count=preview?12:p*2, columns=preview?4:count<=16?4:count<=24?6:8;
@@ -56,7 +56,7 @@ function previewBoard(){
   for(let i=0;i<12;i++){const el=document.createElement('div');el.className='preview-card';fragment.appendChild(el);}
   ui.board.appendChild(fragment);ui.hint.hidden=false;
 }
-function updateReadyPreview(){const p=readPairs();if(!p){message('Escolha entre 2 e 32 pares.',true);return;}game.pairs=p;game.theme=selectedTheme();game.matches=0;game.attempts=0;previewBoard();labelFor(p,game.theme);updateStats();updateRecord();message('Escolha um tema e comece a brincadeira!');}
+function updateReadyPreview(){const p=readPairs();game.pairs=p;game.theme=selectedTheme();game.matches=0;game.attempts=0;previewBoard();labelFor(p,game.theme);updateStats();updateRecord();message('Escolha um tema e comece a brincadeira!');}
 function formatTime(ms){const sec=Math.floor(ms/1000);return `${String(Math.floor(sec/60)).padStart(2,'0')}:${String(sec%60).padStart(2,'0')}`;}
 function elapsed(){return game.elapsed+(game.state==='playing'?performance.now()-game.resumeAt:0);}
 function updateStats(){ui.time.textContent=formatTime(elapsed());ui.attempts.textContent=String(game.attempts);ui.pairs.innerHTML=`${game.matches} <em>/ ${game.pairs}</em>`;const pct=Math.round(game.matches/game.pairs*100);ui.progress.style.width=`${pct}%`;ui.progressText.textContent=`${pct}% concluído`;ui.progressTrack.setAttribute('aria-valuemax',game.pairs);ui.progressTrack.setAttribute('aria-valuenow',game.matches);}
@@ -69,7 +69,7 @@ let audioContext;
 function playSound(type){if(!game.sound)return;try{audioContext ||= new (window.AudioContext||window.webkitAudioContext)();if(audioContext.state==='suspended')audioContext.resume();const notes=type==='win'?[523,659,784]:type==='match'?[540,740]:type==='miss'?[270,220]:[500];notes.forEach((hz,i)=>{const osc=audioContext.createOscillator(),gain=audioContext.createGain(),at=audioContext.currentTime+i*.09;osc.frequency.value=hz;osc.type='sine';gain.gain.setValueAtTime(.0001,at);gain.gain.exponentialRampToValueAtTime(.075,at+.015);gain.gain.exponentialRampToValueAtTime(.0001,at+.13);osc.connect(gain).connect(audioContext.destination);osc.start(at);osc.stop(at+.14);});}catch(_){} }
 function library(theme){
   const local=window.BIBLIOTECA_LOCAL||{},pixabay=window.BIBLIOTECA_PIXABAY||{};
-  const categories=theme==='todos'?['animais','frutas','transportes']:[theme];
+  const categories=theme==='todos'?['animais','frutas','transportes','legumes','numeros']:[theme];
   const pool=[];const seen=new Set();
   // Primeiro imagens importadas da Pixabay e aprovadas manualmente; depois ilustrações locais de demonstração.
   for(const category of categories){
@@ -130,7 +130,7 @@ function flipCard(btn,item,index,version){
   }
 }
 async function startGame(){
-  const p=readPairs();if(p===null){message('Por favor, escolha um número inteiro entre 2 e 32.',true);ui.input.focus();return;}
+  const p=readPairs();
   const theme=selectedTheme();const version=++game.version;
   endTimers();if(ui.dialog.open)ui.dialog.close();game.state='loading';game.locked=true;game.matches=0;game.attempts=0;game.pairs=p;game.theme=theme;game.first=game.second=null;game.elapsed=0;
   ui.pause.disabled=true;ui.pauseOverlay.hidden=true;ui.hint.hidden=true;ui.start.disabled=true;ui.startLabel.textContent='Carregando imagens...';
@@ -155,8 +155,7 @@ function resume(){if(game.state!=='paused')return;game.state='playing';game.resu
 function finishGame(){if(game.state!=='playing')return;game.elapsed=elapsed();game.state='won';endTimers();ui.pause.disabled=true;updateStats();const better=saveRecord();updateRecord();ui.winTime.textContent=formatTime(game.elapsed);ui.winAttempts.textContent=String(game.attempts);ui.winPairs.textContent=String(game.pairs);const stars=game.attempts<=game.pairs*1.5?3:game.attempts<=game.pairs*2.5?2:1;ui.winStars.textContent='★'.repeat(stars)+'☆'.repeat(3-stars);ui.winStars.setAttribute('aria-label',`${stars} de 3 estrelas`);ui.winRecord.textContent=better?'Novo recorde!':'Você completou mais uma partida!';ui.startLabel.textContent='Jogar novamente';message('Parabéns! Todos os pares encontrados!');playSound('win');if(typeof ui.dialog.showModal==='function')ui.dialog.showModal();}
 function zoom(delta){game.zoom=Math.max(.65,Math.min(1.3,Math.round((game.zoom+delta)*100)/100));ui.board.style.setProperty('--board-scale',game.zoom);ui.zoomLabel.textContent=`${Math.round(game.zoom*100)}%`;ui.zoomOut.disabled=game.zoom<=.65;ui.zoomIn.disabled=game.zoom>=1.3;}
 
-ui.presets.forEach(button=>button.addEventListener('click',()=>{ui.input.value=button.dataset.pairs;updatePreset();}));
-ui.input.addEventListener('input',updatePreset);
+ui.presets.forEach(button=>button.addEventListener('click',()=>updatePreset(Number(button.dataset.pairs))));
 ui.themes.forEach(button=>button.addEventListener('click',()=>changeTheme(button.dataset.theme)));
 ui.start.addEventListener('click',startGame);ui.previewStart.addEventListener('click',startGame);
 ui.pause.addEventListener('click',togglePause);ui.resume.addEventListener('click',resume);

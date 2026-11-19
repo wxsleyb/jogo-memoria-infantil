@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#51bdfa">
-  <meta name="description" content="Jogo da Memória infantil com bichinhos, frutinhas e veículos. Escolha uma dificuldade e encontre os pares!">
+  <meta name="description" content="Jogo da Memória infantil com bichinhos, frutinhas, veículos, legumes e números. Escolha uma dificuldade e encontre os pares!">
+  <link rel="icon" type="image/svg+xml" href="img/favicon-memory.svg">
   <title>JOGO DA MEMÓRIA</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,7 +48,9 @@
             <button class="theme is-selected" type="button" data-theme="animais" aria-pressed="true"><span class="theme-emoji" aria-hidden="true">🐾</span><span>Bichinhos</span></button>
             <button class="theme" type="button" data-theme="frutas" aria-pressed="false"><span class="theme-emoji" aria-hidden="true">🍓</span><span>Frutinhas</span></button>
             <button class="theme" type="button" data-theme="transportes" aria-pressed="false"><span class="theme-emoji" aria-hidden="true">🚙</span><span>Veículos</span></button>
-            <button class="theme" type="button" data-theme="todos" aria-pressed="false"><span class="theme-emoji" aria-hidden="true">🌈</span><span>Todos</span></button>
+            <button class="theme" type="button" data-theme="legumes" aria-pressed="false"><span class="theme-emoji" aria-hidden="true">🥕</span><span>Legumes</span></button>
+            <button class="theme" type="button" data-theme="numeros" aria-pressed="false"><span class="theme-emoji" aria-hidden="true">🔢</span><span>Números</span></button>
+            <button class="theme" type="button" data-theme="todos" aria-pressed="false"><span class="theme-emoji" aria-hidden="true">⭐</span><span>Todos</span></button>
           </div>
         </div>
 
@@ -58,9 +61,7 @@
             <button type="button" class="preset" data-pairs="12" aria-pressed="false"><span><strong>Médio</strong><small>12 pares</small></span><b class="preset-check" aria-hidden="true">✓</b></button>
             <button type="button" class="preset" data-pairs="16" aria-pressed="false"><span><strong>Difícil</strong><small>16 pares</small></span><b class="preset-check" aria-hidden="true">✓</b></button>
           </div>
-          <label class="input-label" for="numPairs">Ou personalize <span>(2 a 32 pares)</span></label>
-          <div class="input-wrap"><input type="number" id="numPairs" name="numPairs" min="2" max="32" step="1" value="6" inputmode="numeric"><span>pares</span></div>
-        </div>
+</div>
 
         <button id="start-button" class="primary-button" type="button"><span aria-hidden="true">▶</span><span id="start-button-label">Começar a jogar!</span><span aria-hidden="true">✦</span></button>
         <p class="setup-message" id="setup-message" role="status" aria-live="polite">Escolha um tema e comece a brincadeira!</p>

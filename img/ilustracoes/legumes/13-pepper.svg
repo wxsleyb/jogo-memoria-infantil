@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="420" viewBox="0 0 360 420" role="img" aria-label="Ilustração de Pimentão">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFF0E8"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#7D6C9C" flood-opacity=".18"/></filter>
+</defs>
+<rect width="360" height="420" rx="24" fill="url(#bg)"/>
+<circle cx="63" cy="84" r="28" fill="#FFFFFF99"/><circle cx="301" cy="95" r="39" fill="#FFFFFF77"/>
+<g filter="url(#shadow)">
+<path d="M151 136 C163 128 197 128 209 136 C226 147 231 174 226 204 C220 242 201 270 180 270 C159 270 140 242 134 204 C129 174 134 147 151 136 Z" fill="#E84A42"/>
+<path d="M180 136 C180 121 187 108 199 101" stroke="#5FB766" stroke-width="10" fill="none" stroke-linecap="round"/>
+<path d="M160 173 C170 164 190 164 200 173 M156 206 C170 198 190 198 204 206" stroke="#F47B72" stroke-width="6" fill="none" stroke-linecap="round"/>
+</g>
+<rect x="44" y="352" width="272" height="48" rx="24" fill="#FFFFFFE9"/>
+<text x="180" y="383" font-family="Verdana, Arial, sans-serif" font-weight="bold" font-size="23" text-anchor="middle" fill="#55516B">Pimentão</text>
+</svg>

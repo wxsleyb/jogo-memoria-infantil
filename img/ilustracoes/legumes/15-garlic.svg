@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="420" viewBox="0 0 360 420" role="img" aria-label="Ilustração de Alho">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F7F2FF"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#7D6C9C" flood-opacity=".18"/></filter>
+</defs>
+<rect width="360" height="420" rx="24" fill="url(#bg)"/>
+<circle cx="63" cy="84" r="28" fill="#FFFFFF99"/><circle cx="301" cy="95" r="39" fill="#FFFFFF77"/>
+<g filter="url(#shadow)">
+<path d="M180 130 C196 145 206 170 206 204 C206 242 193 274 180 274 C167 274 154 242 154 204 C154 170 164 145 180 130 Z" fill="#F0EBFB"/>
+<path d="M154 152 C143 166 136 185 136 210 C136 243 152 269 170 269" fill="#FBF9FF"/>
+<path d="M206 152 C217 166 224 185 224 210 C224 243 208 269 190 269" fill="#FBF9FF"/>
+<path d="M180 130 C180 112 187 98 200 86" stroke="#71C06B" stroke-width="9" stroke-linecap="round" fill="none"/>
+</g>
+<rect x="44" y="352" width="272" height="48" rx="24" fill="#FFFFFFE9"/>
+<text x="180" y="383" font-family="Verdana, Arial, sans-serif" font-weight="bold" font-size="23" text-anchor="middle" fill="#55516B">Alho</text>
+</svg>

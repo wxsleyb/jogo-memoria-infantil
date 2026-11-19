@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="420" viewBox="0 0 360 420" role="img" aria-label="Ilustração de Espinafre">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#EAF9EA"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#7D6C9C" flood-opacity=".18"/></filter>
+</defs>
+<rect width="360" height="420" rx="24" fill="url(#bg)"/>
+<circle cx="63" cy="84" r="28" fill="#FFFFFF99"/><circle cx="301" cy="95" r="39" fill="#FFFFFF77"/>
+<g filter="url(#shadow)">
+<path d="M180 114 C218 135 239 190 214 242 C204 263 190 275 180 275 C170 275 156 263 146 242 C121 190 142 135 180 114 Z" fill="#5AB663"/>
+<path d="M180 129 C171 156 168 196 180 257" stroke="#7FD287" stroke-width="8" stroke-linecap="round"/>
+<path d="M180 169 C165 167 151 171 139 182 M180 192 C198 189 212 195 223 207" stroke="#7FD287" stroke-width="6" stroke-linecap="round" fill="none"/>
+</g>
+<rect x="44" y="352" width="272" height="48" rx="24" fill="#FFFFFFE9"/>
+<text x="180" y="383" font-family="Verdana, Arial, sans-serif" font-weight="bold" font-size="23" text-anchor="middle" fill="#55516B">Espinafre</text>
+</svg>

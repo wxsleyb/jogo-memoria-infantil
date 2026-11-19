@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="420" viewBox="0 0 360 420" role="img" aria-label="Ilustração de Cogumelo">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F7F1E9"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#7D6C9C" flood-opacity=".18"/></filter>
+</defs>
+<rect width="360" height="420" rx="24" fill="url(#bg)"/>
+<circle cx="63" cy="84" r="28" fill="#FFFFFF99"/><circle cx="301" cy="95" r="39" fill="#FFFFFF77"/>
+<g filter="url(#shadow)">
+<path d="M117 194 C128 154 160 131 199 131 C235 131 260 155 267 194 C230 181 154 181 117 194 Z" fill="#E25D51"/>
+<circle cx="152" cy="158" r="8" fill="#FFF7EA"/><circle cx="188" cy="150" r="8" fill="#FFF7EA"/><circle cx="217" cy="166" r="8" fill="#FFF7EA"/><rect x="158" y="192" width="44" height="83" rx="20" fill="#F2E3C9"/>
+<path d="M172 195 V273 M188 195 V273" stroke="#E8D5B7" stroke-width="5"/>
+</g>
+<rect x="44" y="352" width="272" height="48" rx="24" fill="#FFFFFFE9"/>
+<text x="180" y="383" font-family="Verdana, Arial, sans-serif" font-weight="bold" font-size="23" text-anchor="middle" fill="#55516B">Cogumelo</text>
+</svg>
